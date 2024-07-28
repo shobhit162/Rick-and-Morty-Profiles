@@ -26,12 +26,12 @@ describe('CharacterProfile', () => {
 
   test('renders character profile', async () => {
     render(
-        <MemoryRouter initialEntries={['/character/1']}>
-          <Routes>
-            <Route path="/character/:id" element={<CharacterProfile />} />
-          </Routes>
-        </MemoryRouter>
-      );
+      <MemoryRouter initialEntries={['/character/1']}>
+        <Routes>
+          <Route path="/character/:id" element={<CharacterProfile />} />
+        </Routes>
+      </MemoryRouter>
+    );
 
     expect(await screen.findByText(/Rick Sanchez/)).toBeInTheDocument();
     expect(screen.getByText(/Human/)).toBeInTheDocument();
