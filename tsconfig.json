@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "jsx": "react-jsx",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "plugins": [
+      {
+        "name": "@emotion/babel-plugin",
+        "options": {}
+      }
+    ]
+    },
+    "include": ["src"]
+  }
+  
